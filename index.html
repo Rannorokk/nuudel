@@ -5,24 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <select name="pasta_select" id="pasta_select">
-        <option selected disabled value="none"></option>
-        <option value="fusili">Fusili</option>
-        <option value="penne rigate">Penne rigate</option>
-        <option value="ditali lisci">Ditali lisci</option>
-        <option value="maccheroni lisci">Maccheroni lisci</option>
-        <option value="spaghetti">Spaghetti</option>
-    </select>
-    <select name="kypsus_select" id="kypsus_select">
-        <option selected disabled value="none"></option>
-        <option value="aldente">Al dente</option>
-        <option value="harder">Harder</option>
-        <option value="softer">Softer</option>
-    </select>
-    <button id="start_timer_button" onclick="alustaTaimer();">Alusta taimer</button>
-    <p id="demo">0</p>
+    <div class="main">
+        <span id="demo">0</span>
+        <label for="pasta_select">Vali pasta tüüp</label>
+        <select name="pasta_select" id="pasta_select" class="form-control">
+            <option selected disabled value="none"></option>
+            <option value="fusili">Fusili</option>
+            <option value="penne rigate">Penne rigate</option>
+            <option value="ditali lisci">Ditali lisci</option>
+            <option value="maccheroni lisci">Maccheroni lisci</option>
+            <option value="spaghetti">Spaghetti</option>
+        </select>
+        <label for="kypsus_select">Vali küpsus</label>
+        <select name="kypsus_select" id="kypsus_select" class="form-control">
+            <option selected disabled value="none"></option>
+            <option value="aldente">Al dente</option>
+            <option value="harder">Harder</option>
+            <option value="softer">Softer</option>
+        </select>
+        <button class="btn btn-primary" id="start-timer-button" onclick="alustaTaimer();">Alusta taimer</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="taimer.js"></script>
 </body>
 </html>

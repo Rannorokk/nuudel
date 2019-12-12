@@ -1,8 +1,3 @@
-/*
-var pasta_liik = prompt('Sisestage pasta liik, mida keeta tahate: ').toLowerCase();
-var küpsusaste = prompt('Sisestage pasta soovitud küpsusaste: ').toLowerCase();
-*/
-
 var pasta_liik;
 var küpsusaste;
 
