@@ -12,22 +12,26 @@
 <body>
     <div class="main">
         <span id="demo">0</span>
-        <label for="pasta_select">Vali pasta tüüp</label>
-        <select name="pasta_select" id="pasta_select" class="form-control">
-            <option selected disabled value="none"></option>
-            <option value="fusili">Fusili</option>
-            <option value="penne rigate">Penne rigate</option>
-            <option value="ditali lisci">Ditali lisci</option>
-            <option value="maccheroni lisci">Maccheroni lisci</option>
-            <option value="spaghetti">Spaghetti</option>
-        </select>
-        <label for="kypsus_select">Vali küpsus</label>
-        <select name="kypsus_select" id="kypsus_select" class="form-control">
-            <option selected disabled value="none"></option>
-            <option value="aldente">Al dente</option>
-            <option value="harder">Harder</option>
-            <option value="softer">Softer</option>
-        </select>
+        <div class="form-group">
+            <label for="pasta_select">Vali pasta tüüp</label>
+            <select name="pasta_select" id="pasta_select" class="form-control">
+                <option selected disabled value="none"></option>
+                <option value="fusili">Fusili</option>
+                <option value="penne rigate">Penne rigate</option>
+                <option value="ditali lisci">Ditali lisci</option>
+                <option value="maccheroni lisci">Maccheroni lisci</option>
+                <option value="spaghetti">Spaghetti</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="kypsus_select">Vali küpsus</label>
+            <select name="kypsus_select" id="kypsus_select" class="form-control">
+                <option selected disabled value="none"></option>
+                <option value="aldente">Al dente</option>
+                <option value="harder">Harder</option>
+                <option value="softer">Softer</option>
+            </select>
+        </div>
         <button class="btn btn-primary" id="start-timer-button" onclick="alustaTaimer();">Alusta taimer</button>
     </div>
 
