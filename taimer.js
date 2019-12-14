@@ -1,5 +1,6 @@
 var pasta_liik;
 var küpsusaste;
+var x;
 
 var harder = {'fusili':5, 'penne rigate':7, 'ditali lisci':5, 'maccheroni lisci':5, 'spaghetti':7};
 var aldente = {'fusili':6, 'penne rigate':8, 'ditali lisci':7, 'maccheroni lisci':7, 'spaghetti':8};
@@ -12,6 +13,8 @@ var sõnastik = {
 };
 
 function alustaTaimer() {
+    clearInterval(x);
+
     pasta_liik = document.getElementById('pasta_select').value;
     küpsusaste = document.getElementById('kypsus_select').value;
 
@@ -19,7 +22,7 @@ function alustaTaimer() {
     var d = new Date();
     var targetTime = d.getTime() + aeg;
 
-    var x = setInterval(() => {
+    x = setInterval(() => {
         // Get today's date and time
         var now = new Date().getTime();
             
